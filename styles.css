@@ -1,18 +1,25 @@
 * {
   margin: 0;
-  padding: 0;	
+  padding: 0;
 }
 
 #prompt-container {
-  font-family: Courier New, Courier, monospace;
-  font-size: 24px;
+  margin-top: 2vh;
+  /* font-family: Courier New, Courier, monospace; */
+  font-size: 2em;
   letter-spacing: 3px;
 }
 
+#sentence {
+  font-weight: 300;
+}
+
 .highlight2 {
-  background-color: yellow;
+  background-color: rgb(255, 255, 0);
+  border-radius: 3px;
   color: black;
-  transition: 0.9s
+  transition: 0.9s;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
 .keyboard-container {
@@ -20,7 +27,7 @@
 }
 
 #target-letter {
-  font-size: 38px;  
+  font-size: 38px;
 }
 
 .keys-row {
@@ -32,9 +39,9 @@
   font-size: 20px;
 }
 .glyphicon-ok {
-  color: #1DA237
+  color: #1da237;
 }
 
 .glyphicon-remove {
-  color : #CD2626
+  color: #cd2626;
 }

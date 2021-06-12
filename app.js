@@ -18,15 +18,13 @@ $(document).ready(function () {
   let mistakeCtr = 0;
   let ctr = 0;
   let startTime;
-  
-  
+
   sentenceDisplay.text(sentences[sentenceIndex]);
-  
+
   upperKeyboard.hide();
-  
+
   highlight_sentence = sentences[sentenceIndex].highlightAt(letterIndex);
   sentenceDisplay.html(highlight_sentence);
-  
 
   function gameStart(e) {
     startTime = e.timeStamp;
@@ -79,7 +77,7 @@ $(document).ready(function () {
   });
 
   $(document).keypress(function (e) {
-    $(`#${e.which}`).css('background-color', 'yellow');
+    $(`#${e.which}`).css('background-color', `rgba(255, 255, 0, 0.664)`);
   });
 
   $(document).keyup(function (e) {
